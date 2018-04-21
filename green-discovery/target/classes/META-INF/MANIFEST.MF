@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: green-discovery
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: limingliang
+Implementation-Vendor-Id: com.green
+Build-Jdk: 1.8.0_152
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/green/green-discovery
+Created-By: Maven Integration for Eclipse
+
