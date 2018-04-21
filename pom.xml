@@ -7,6 +7,8 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>green-discovery</module>
+		<module>green-config</module>
+		<module>config</module>
 	</modules>
 
 	<!-- 引入springboot默认配置 -->
