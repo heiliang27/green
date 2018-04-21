@@ -5,12 +5,10 @@ eureka:
       
 server:
   port: 8762
-  
+    
 spring:
   application:
     name: green-config
-    
-spring:
   cloud:
     config:
       label: master
@@ -18,5 +16,5 @@ spring:
         git:
           uri: https://github.com/forezp/SpringcloudConfig/
           searchPaths: respo
-          username: 
-          password:
+#          username: 
+#          password:
