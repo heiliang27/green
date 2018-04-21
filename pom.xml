@@ -9,6 +9,7 @@
 		<module>green-discovery</module>
 		<module>green-config</module>
 		<module>config</module>
+		<module>green-admin</module>
 	</modules>
 
 	<!-- 引入springboot默认配置 -->
