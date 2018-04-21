@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/      
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: green-admin
+  cloud:
+    config:
+      lable: master
+      profile: dev
+      url: http://localhost:9999/
+      discovery:
+        enabled: true
+        serviceId: green-config
