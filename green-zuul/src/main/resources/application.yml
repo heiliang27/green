@@ -8,9 +8,12 @@ server:
 
 zuul:
   routes:
-    api-a:
+    admin:
       path: /admin/**
       serviceId: green-admin
     api-b:
       path: /user/**
       serviceId: green-user
+admin:
+  ribbon:
+    listOfServers: localhost:8080,localhost:8081 #example.com,google.com
