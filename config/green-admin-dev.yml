@@ -5,10 +5,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/ 
     healthcheck:  # 健康检查
       enabled: true
-  instance:   
+  instance:      
     prefer-ip-address: true
     #可能比较长，复制的时候请写在一行 
-    # instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}}}
+    #instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+    #${spring.application.name}:${server.port}
     appname: green-admin
 # 服务端口     
 server:
