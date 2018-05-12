@@ -9,16 +9,25 @@ eureka:
   instance:
     hostname: 127.0.0.1
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    healthcheck:
+      enabled: true #开启健康检查 注册中心集群使用
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
   server:
     #关闭自我保护
     enable-self-preservation: false
     #设置自动清理时间
     eviction-interval-timer-in-ms: 100
-
+# 注册中心访问限制
+security:
+  basic:
+    enabled: true
+  user:
+    name: root #用户名和密码，等会访问的时候，会要求你登录，服务注册的时候也需要带着用户名和密码
+    password: booszy
+    
 logging:
   level:
     com:
