@@ -7,8 +7,9 @@ eureka:
       enabled: true
   instance:   
     prefer-ip-address: true
-    #可能比较长，复制的时候请写在一行
-    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    #可能比较长，复制的时候请写在一行    
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+#    ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
     appname: green-admin
 # 服务端口     
 server:
