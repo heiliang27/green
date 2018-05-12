@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: green-config
+  profiles:
+    active: git #这个默认为git 可以不配置
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/heiliang27/green/
+          searchPaths: config
+#          username: 
+#          password:
