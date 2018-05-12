@@ -5,10 +5,13 @@ eureka:
       defaultZone: http://localhost:8761/eureka/ 
     healthcheck:  # 健康检查
       enabled: true
-  instance:
-    appname: green-admin 
+  instance:   
+    prefer-ip-address: true
+    #可能比较长，复制的时候请写在一行
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    appname: green-admin
 # 服务端口     
 server:
-  port: 8081
+  port: 8080
 # 业务内容
 hello: hi my name is xiaoming - green-admin-dev
