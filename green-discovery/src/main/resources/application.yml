@@ -19,7 +19,7 @@ eureka:
     #关闭自我保护
     enable-self-preservation: false
     #设置自动清理时间
-    eviction-interval-timer-in-ms: 100
+    #eviction-interval-timer-in-ms: 10000
 # 注册中心访问限制
 security:
   basic:
