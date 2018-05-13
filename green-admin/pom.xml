@@ -9,6 +9,12 @@
 	<artifactId>green-admin</artifactId>
 
 	<dependencies>
+		<!-- 引入自己公共代码 -->
+		<dependency>
+			<groupId>com.green</groupId>
+			<artifactId>green-commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- eureka客户端 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
