@@ -11,6 +11,7 @@
 		<module>config</module>
 		<module>green-admin</module>
 		<module>green-zuul</module>
+		<module>green-commons</module>
 	</modules>
 
 	<!-- 引入springboot默认配置 -->
