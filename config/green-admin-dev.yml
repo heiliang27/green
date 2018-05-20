@@ -21,11 +21,11 @@ druid:
      url: jdbc:mysql://qdm170159589.my3w.com/qdm170159589_db?useUnicode=true&characterEncoding=UTF8
      username: qdm170159589
      password: 12345678
-#mybatis:
-#  mapper-locations: classpath*:com/stylefeng/guns/**/mapping/*.xml
-#  typeAliasesPackage: com.stylefeng.guns.modular.system.model
 mybatis:
-  basepackage: com.green.modular.mapper
-  xmlLocation: classpath:com/green/modular/mapper/**/*.xml
-  mapper-locations: "classpath*:com/green/modular/mapper/**.xml"
+  mapper-locations: classpath*:com/green/modular/**/mapping/*.xml
+  typeAliasesPackage: com.green.modular.model
+#mybatis:
+#  basepackage: com.green.modular.mapper
+#  xmlLocation: classpath:com/green/modular/mapper/**/*.xml
+#  mapper-locations: "classpath*:com/green/modular/mapper/**.xml"
    
