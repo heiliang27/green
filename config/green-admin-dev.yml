@@ -15,7 +15,7 @@ eureka:
 server:
   port: 8080
 
-spring:
+druid:
    datasource:
      driver-class-name: com.mysql.jdbc.Driver
      url: jdbc:mysql://qdm170159589.my3w.com/qdm170159589_db?useUnicode=true&characterEncoding=UTF8
