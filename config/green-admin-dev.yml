@@ -14,5 +14,10 @@ eureka:
 # 服务端口     
 server:
   port: 8080
-# 业务内容
-hello: hi my name is xiaoming - green-admin-dev
+
+spring:
+   datasource:
+     name: test
+     url: jdbc:mysql://qdm170159589.my3w.com/qdm170159589_db?useUnicode=true&characterEncoding=UTF8
+     username: qdm170159589
+     password: 12345678
