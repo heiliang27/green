@@ -22,7 +22,7 @@ druid:
      username: qdm170159589
      password: 12345678
 # mybatis:
-#     mapperLocations: classpath*:com/green/modular/**/mapping/*.xml
+#    mapperLocations: classpath*:com/green/modular/**/mapping/*.xml
 mybatis:
     basepackage: com.green.modular.mapper
     xmlLocation: classpath:com/green/modular/mapper/**/*.xml
