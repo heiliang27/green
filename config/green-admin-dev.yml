@@ -24,4 +24,4 @@ spring:
 mybatis:
     basepackage: com.green.modular.mapper  
     xmlLocation: classpath:mapper/**/*.xml
-    mapper-locations: "classpath*:com.green/**/mapping/*.xml"
+    mapper-locations: "classpath*:mapper/*.xml"
