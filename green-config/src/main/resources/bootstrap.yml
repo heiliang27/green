@@ -12,3 +12,7 @@ spring:
           searchPaths: config
 #          username: 
 #          password:
+
+# 配置中心秘钥        
+encrypt:
+  key: limingliang
