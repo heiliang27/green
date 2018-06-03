@@ -14,7 +14,7 @@ public class DruidProperties {
 
 	private String username = "qdm170159589";
 
-	private String password = "123456";
+	private String password = "12345678";
 
 	private String driverClassName = "com.mysql.jdbc.Driver";
 
@@ -45,7 +45,8 @@ public class DruidProperties {
 	private String filters = "stat";
 
 	public void config(DruidDataSource dataSource) {
-        System.out.println("DruidProperties.config--创建------------------------------------------------------------------");
+		System.out.println(
+				"DruidProperties.config--创建------------------------------------------------------------------");
 		dataSource.setUrl(url);
 		dataSource.setUsername(username);
 		dataSource.setPassword(password);
